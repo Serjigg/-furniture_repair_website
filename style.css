@@ -1,293 +1,267 @@
-
- /*.............меню................*/
- h1{
-    text-align: center;
- }
- .services img{
-    border-radius: 50%;
- }
-
-.row
-{
-    background-color: #fffafa;
-    color: black; 
-    font-family:'Times New Roman', Times, serif
-    
-    
+@font-face {
+    font-family: "Traj";
+    src: url("font/TRAJ_REGULAR.OTF") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "ROBOTO-ITALIC";
+    src: url("font/ROBOTO-ITALIC.TTF") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "ROBOTO";
+    src: url("font/ROBOTO.TTF") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "ROBOTO-med";
+    src: url("font/RobotoMedium.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+.Roboto-med{
+    font-family: "ROBOTO-med";
+}
+.Roboto-ital{
+    font-family: "ROBOTO-ITALIC";
+}
+.Roboto{
+    font-family: "ROBOTO";
+}
+.font-traj{
+    font-family: "Traj";
+}
+.first-block{
+    background-image: url('img/img/fon.jpg'); 
+    height: 694px; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: cover; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
 }
 
-.navbar{
-    color: #c78686;
+.table-first{
+    border: 3px dashed #614537; 
+    border-color: #614537; 
+    border-radius: 5px; 
+    border-collapse: separate; 
+    width: max-content;  
+    margin-top: 10px; 
+    height: 85%; 
+    width: 98%;
 }
 
-.leftHeader::after
-{
-    text-align: center;
-    font-size: 40px;
+.table-first th:nth-child(odd) {
+    background-color: #e1d9d1;
 }
 
-.rightHeader
-{
-    margin-top:  2px;
-    text-align: right;
-    margin-right: 40px;
+.background_brown{
+    background-color: #614537;
 }
-.zag{
-    background-color: #f1f1f1;
-    opacity: 85%;
-   
+.background_white-gray{
+    background-color: #e4e0df;
 }
 
-.container::after
-{
- width:  480px;
- text-align: center;
- 
- background-color: #fffafa;
- 
-}
-.header {
-    background-color: #fffafa;
-    opacity: 85%;
-    
+li{
+    list-style-type: none;
+    padding-top: 30px;
+    padding-left: 0;
 
-}
-.table{
-
-}
-
-
-td{
-    text-align: center;
-}
-
- /*.............контент....................*/
-
-span{
-    background-color: #fffafa;
-    opacity: 85%;
-    position: relative;
-   
-}
-.content {
-    color: rgb(0, 0, 0);
-    font-size: 16px;
-    background-color: rgb(255, 255, 255);
-
-    margin-top: 450px;
-    text-align: center;
-   
-
-} 
-
-
-
-body {
-    background-image: url(img/main.jpg);
-    background-repeat: no-repeat;
-
-    background-position: center center;
-
-    background-attachment: fixed;
-
-    -webkit-background-size: cover;
-
-    -moz-background-size: cover;
-
-    -o-background-size: cover;
-
-    background-size: cover;
-    font-family: "Lato", sans-serif;
-    
-    -webkit-font-smoothing: antialiased;
-    -webkit-overflow-scrolling: touch;
-
-    margin-top: 20px;
-}
-h1{
-    color: white;
-    margin-top: 20%;
-   text-align: center;
-}
- h2, h3, h4, h5, h6{
-    font-family: 'Lucida Sans';
-}
-h5{
-    text-align: center;
-}
-.centered {
-
-    text-align: center;
-}
-
-.navigation{
-position: fixed;
-top: 0%;
-width: 100%;
-background-color: #343a40!important;
-z-index: 4;
-color:rgb(185, 185, 185);
-}
-
-a {
-
-    color: inherit;
-}
-a:hover, a:focus {
-    color: rgb(158, 158, 158);
-    outline: 0;
     
 }
-
-p{
-    line-height: 28px;
-    margin-bottom: 25px;
+ul{
+    padding-left: 0;
+    padding-left: 0;  
+    margin-left: 0;   
+    text-align: left; 
 }
 
-.sidenav {
-    height: 100%;
-    width: 0;
-    position:absolute;
-    z-index: 100;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-    opacity: 85%;
+th, td {
+text-align: center; /* Горизонтальное центрирование текста */
+vertical-align: middle; /* Вертикальное центрирование текста */
+padding: 10px; /* Отступы внутри ячеек */
 }
 
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #ffffff;
-    display: block;
-    transition: 0.3s;
+.buttom{
+    color: #e1d9d1;
+    width: 292px; height: 75px; 
+    background-color: #614537;
+    border-radius: 10px;
+}
+.buttom:hover{
+    border: 2px solid transparent black; 
+
+    color: #614537;
+    background-color: #e1d9d1;
+    transition: background-color 0.3s ease, font-size 0.3s ease; /* Плавный переход */
 }
 
-.sidenav a:hover {
-    color: #f1f1f1;
+
+
+body{
+    background-color: #e4e0df;
+    font-family: "Roboto-med";
+}
+.menuItem .menu {
+    font-size: 20px;
+    font-weight: 600;
+    list-style: none;
+    padding: 0 0 15px;
+    margin-bottom: 20px;
+    display: inline-block;
+    color: #10cdff;
+    }
+    .menuItem .menu li {
+    padding: 16px 30px 0px;
+    margin-bottom: 0;
+    display: inline-block;
+    width: 100%;
+    float: left;
+    background: #ffffff;
+    line-height: 30px;
+    border-left: 2px solid #10cdff;
+    border-radius: 0;
+    }
+    .menuItem .detail {
+    font-size: 13px;
+    color: #444;
+    font-weight: normal;
+    }
+    .menuItem .price {
+    font-size: 13px;
+    float: right;
+    font-weight: 600;
+    }
+    .menuItem .btn {
+    text-align: center;
+    color: #FFFFFF;
+    background: #10cdff;
+    border-color: #10cdff;
+    width: 120px;
+    border-radius: 0;
+    }
+
+
+.image-container{
+    position:relative;
+    width:300px;
+    height:200px;
+    transform-style: preserve-3d;
+    transform: perspective(1000px) rotateY(0deg);
+    transition: transform 0.7s;
+    
+    }
+.image-container span{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+}
+.image-container span img{
+position:absolute;
+left:0;
+top:0;
+width:100%;
+border-radius: 5px;
+border: 3px solid #614537;
 }
 
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+.btn-container{
+position:relative;
+width:80%;
+}
+.btn-brown{
+    background-color: #614537;
+    color:white;
+}
+.btn-brown:hover{
+    filter:brightness(1.5);
+
+}
+.btn{
+position: absolute;
+bottom:-80px;
+background-color: #614537;
+color:white;
+padding:10px 20px;
+border-radius: 5px;
+border:none;
+cursor: pointer;
+}
+.btn:hover{
+filter:brightness(1.5);
+}
+#prev{
+left:20%;
+}
+#next{
+right:20%;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+.container2 {
+    display: flex; /* Используем flexbox */
+    justify-content: space-between; /* Распределяем пространство между таблицами */
+}
+table {
+    width: 400px;
+    border-collapse: collapse; /* Убираем двойные границы */
+    margin-right: 60px; /* Отступ между таблицами */
+    margin-left: 60px;
+}
+td {
+    
+    padding: 1px; 
 }
 
-.services,  .price,  h5 {
-    background-color: #ffffff;
-    color: #111;
-    width:auto;
-    height: 20%;
+
+textarea::placeholder {
+    white-space: pre-line; /* Позволяет перенос строк */
+    content: "Звонить после 17.\nХочу перетянуть диван"; /* Эмуляция многострочности */
+}
+
+#carouselExampleControls2 {
+    width: 70%; /* Ширина карусели */
+    margin: auto; /* Центрируем карусель */
     
 }
-.materials,  .card-title{
-    background-color: #ffffff;
-    color: #111;
-    width:auto;
-    height: 20%;
-
+#carouselExampleControls2 .carousel-item img {
+    width: 100%; /* Ширина изображения 100% от родительского элемента */
+    height: 300px; /* Фиксированная высота изображений */
+    object-fit: cover; /* Обеспечивает сохранение пропорций изображения */
+}
+.brown-line{
+    background-color: #614537;
+    height: 2px;
 }
 
-.timeWork
-{
+/*Почему именно мы */
+#table-why-we td {
     text-align: left;
 }
-
-.cont{
-    text-align: right;
+#list-why-we{
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Отступы между элементами списка */
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы у списка */
 }
-
-
-
-
-.carousel {
-    position: relative;
-    width:auto;
-    padding: 10px 40px;
-    border: 1px solid #CCC;
-    border-radius: 15px;
-    background: #ccc;
-
-  }
-  
-  .carousel img {
-    width: 286px;
-    height: 230px;
-    /* делаем этот элемент блочным, чтобы убрать лишнее пространство вокруг картинок */
-    display: block;
-    
-    
-    
-  }
-  
-  .arrow {
-    position: absolute;
-    top: 125px;
-    padding: 0;
-    background: #ddd;
-    border-radius: 15px;
-    border: 1px solid gray;
-    font-size: 24px;
-    line-height: 24px;
-    color: #444;
-    display: block;
-  }
-  
-  .arrow:focus {
-    outline: none;
-  }
-  
-  .arrow:hover {
-    background: #ccc;
-    cursor: pointer;
-  }
-  
-  .prev {
-    left: 7px;
-  }
-  
-  .next {
-    right: 7px;
-  }
-  
-  .gallery {
-    width: 286px;
-    height: 430px;
-    overflow: hidden;
-    
-  }
-  
-  .gallery ul {
-    height: 530px;
-    width: 2000px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    transition: margin-left 250ms;
-    /* удаляем пустое пространство между элементами li, у которых установлен inline-block */
-    /* http://davidwalsh.name/remove-whitespace-inline-block */
-    font-size: 0;
-  }
-  
-  .gallery li {
-    display: inline-block;
-  }
-
-
-  .bottomMenu, .justify-content-center, h3, h5{
-   
-    background-color: #1d2529;
-    color: #ffffff;
-
-  }
+.btn-get-consult{
+    background-image: url('img/icons/стрелка_верх.png'); /* Путь к изображению */
+    background-size: cover; /* Растягиваем изображение на всю кнопку */
+    background-repeat: no-repeat; /* Не повторяем изображение */
+    border: none; /* Убираем рамку */
+    height: 100px; /* Высота кнопки */
+    width: 100px; /* Ширина кнопки */
+    position: absolute; /* Абсолютное позиционирование */
+    bottom: 50px; /* Отступ от нижней границы */
+    right: 50px; /* Отступ от правой границы */
+    cursor: pointer; /* Курсор при наведении */
+    transition: opacity 0.3s; /* Плавный переход */
+    background-color: rgba(255, 255, 255, 0);
+}
