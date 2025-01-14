@@ -1,39 +1,4 @@
-@font-face {
-    font-family: "Traj";
-    src: url("font/TRAJ_REGULAR.OTF") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: "ROBOTO-ITALIC";
-    src: url("font/ROBOTO-ITALIC.TTF") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: "ROBOTO";
-    src: url("font/ROBOTO.TTF") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: "ROBOTO-med";
-    src: url("font/RobotoMedium.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
-.Roboto-med{
-    font-family: "ROBOTO-med";
-}
-.Roboto-ital{
-    font-family: "ROBOTO-ITALIC";
-}
-.Roboto{
-    font-family: "ROBOTO";
-}
-.font-traj{
-    font-family: "Traj";
-}
+
 .first-block{
     background-image: url('img/img/fon.jpg'); 
     height: 694px; 
@@ -45,19 +10,31 @@
     justify-content: space-between; 
 }
 
+.table-first-parent{
+    overflow: hidden; 
+    margin-bottom: 46px; 
+    background-color: #e1d9d1; 
+    height: 106px; 
+    width: 75%; 
+    border-radius: 6px; 
+    margin-top: 20px; 
+}
+
 .table-first{
     border: 3px dashed #614537; 
     border-color: #614537; 
     border-radius: 5px; 
     border-collapse: separate; 
-    width: max-content;  
+    margin-left: 5px;
+    margin-right: 5px;
+    
     margin-top: 10px; 
     height: 85%; 
     width: 98%;
 }
 
-.table-first th:nth-child(odd) {
-    background-color: #e1d9d1;
+.table-first td:nth-child(odd) {
+    color: #614537;
 }
 
 .background_brown{
@@ -264,4 +241,50 @@ textarea::placeholder {
     cursor: pointer; /* Курсор при наведении */
     transition: opacity 0.3s; /* Плавный переход */
     background-color: rgba(255, 255, 255, 0);
+}
+
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: "Traj";
+    src: url("font/TRAJ_REGULAR.OTF") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "ROBOTO-ITALIC";
+    src: url("font/ROBOTO-ITALIC.TTF") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "ROBOTO";
+    src: url("font/ROBOTO.TTF") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "ROBOTO-med";
+    src: url("font/RobotoMedium.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+.Roboto-med{
+    font-family: "ROBOTO-med";
+}
+.Roboto-ital{
+    font-family: "ROBOTO-ITALIC";
+}
+.Roboto{
+    font-family: "ROBOTO";
+}
+.font-traj{
+    font-family: "Traj";
 }
