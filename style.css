@@ -2,7 +2,7 @@
 .first-block{
     background-image: url('img/img/fon.jpg'); 
    
-    height: 69.5vw; 
+    height: 50%; 
     background-repeat: no-repeat; 
     background-position: center; 
     background-size: cover; 
@@ -15,7 +15,7 @@
     overflow: hidden; 
     margin-bottom: 46px; 
     background-color: #e1d9d1; 
-    height: 10.52vw; 
+    height: 9vw; 
     width: 75%; 
     border-radius: 6px; 
     margin-top: 20px; 
