@@ -1,7 +1,8 @@
 
 .first-block{
     background-image: url('img/img/fon.jpg'); 
-    height: 694px; 
+   
+    height: 69.5vw; 
     background-repeat: no-repeat; 
     background-position: center; 
     background-size: cover; 
@@ -14,7 +15,7 @@
     overflow: hidden; 
     margin-bottom: 46px; 
     background-color: #e1d9d1; 
-    height: 106px; 
+    height: 10.52vw; 
     width: 75%; 
     border-radius: 6px; 
     margin-top: 20px; 
@@ -66,7 +67,8 @@ padding: 10px; /* Отступы внутри ячеек */
 
 .buttom{
     color: #e1d9d1;
-    width: 292px; height: 75px; 
+    width: 22vw; 
+    height: 5vw; 
     background-color: #614537;
     border-radius: 10px;
 }
@@ -220,6 +222,7 @@ textarea::placeholder {
 /*Почему именно мы */
 #table-why-we td {
     text-align: left;
+    font-size: 1.2vw;
 }
 #list-why-we{
     display: flex;
@@ -244,7 +247,10 @@ textarea::placeholder {
 }
 
 
-
+.zagolovok{
+    font-size: 30px ;
+    font-family: "Traj";
+}
 
 
 
