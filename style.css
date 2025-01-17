@@ -13,23 +13,23 @@
 
 .table-first-parent{
     overflow: hidden; 
-    margin-bottom: 46px; 
+    margin-bottom: 4vw; 
     background-color: #e1d9d1; 
     height: 9vw; 
     width: 75%; 
-    border-radius: 6px; 
-    margin-top: 20px; 
+    border-radius: 0.6vw; 
+    margin-top: 2vw; 
 }
 
 .table-first{
-    border: 3px dashed #614537; 
+    border: 0.3vw dashed #614537; 
     border-color: #614537; 
-    border-radius: 5px; 
+    border-radius: 0.5vw; 
     border-collapse: separate; 
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
     
-    margin-top: 10px; 
+    margin-top: 0.5vw; 
     height: 85%; 
     width: 98%;
 }
@@ -47,8 +47,8 @@
 
 li{
     list-style-type: none;
-    padding-top: 30px;
-    padding-left: 0;
+    padding-top: 1.6vw;
+    padding-left: 2vw;
 
     
 }
@@ -62,7 +62,7 @@ ul{
 th, td {
 text-align: center; /* Горизонтальное центрирование текста */
 vertical-align: middle; /* Вертикальное центрирование текста */
-padding: 10px; /* Отступы внутри ячеек */
+padding: 1vw; /* Отступы внутри ячеек */
 }
 
 .buttom{
@@ -70,10 +70,10 @@ padding: 10px; /* Отступы внутри ячеек */
     width: 22vw; 
     height: 5vw; 
     background-color: #614537;
-    border-radius: 10px;
+    border-radius: 1vw;
 }
 .buttom:hover{
-    border: 2px solid transparent black; 
+    border: 0.2 solid transparent black; 
 
     color: #614537;
     background-color: #e1d9d1;
@@ -86,52 +86,17 @@ body{
     background-color: #e4e0df;
     font-family: "Roboto-med";
 }
-.menuItem .menu {
-    font-size: 20px;
-    font-weight: 600;
-    list-style: none;
-    padding: 0 0 15px;
-    margin-bottom: 20px;
-    display: inline-block;
-    color: #10cdff;
-    }
-    .menuItem .menu li {
-    padding: 16px 30px 0px;
-    margin-bottom: 0;
-    display: inline-block;
-    width: 100%;
-    float: left;
-    background: #ffffff;
-    line-height: 30px;
-    border-left: 2px solid #10cdff;
-    border-radius: 0;
-    }
-    .menuItem .detail {
-    font-size: 13px;
-    color: #444;
-    font-weight: normal;
-    }
-    .menuItem .price {
-    font-size: 13px;
-    float: right;
-    font-weight: 600;
-    }
-    .menuItem .btn {
-    text-align: center;
-    color: #FFFFFF;
-    background: #10cdff;
-    border-color: #10cdff;
-    width: 120px;
-    border-radius: 0;
-    }
 
+.carousel-description{
+    font-size: 2vw;
+}
 
 .image-container{
     position:relative;
-    width:300px;
-    height:200px;
+    width:23vw;
+    height:16vw;
     transform-style: preserve-3d;
-    transform: perspective(1000px) rotateY(0deg);
+    transform: perspective(100vw) rotateY(0deg);
     transition: transform 0.7s;
     
     }
@@ -139,16 +104,16 @@ body{
 position:absolute;
 top:0;
 left:0;
-width:100%;
-transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+width:23vw;
+transform: rotateY(calc(var(--i) * 45deg)) translateZ(33vw);
 }
 .image-container span img{
 position:absolute;
 left:0;
 top:0;
 width:100%;
-border-radius: 5px;
-border: 3px solid #614537;
+border-radius: 0.5vw;
+border: 0.2vw solid #614537;
 }
 
 .btn-container{
@@ -165,13 +130,16 @@ width:80%;
 }
 .btn{
 position: absolute;
-bottom:-80px;
+bottom:-8vw;
 background-color: #614537;
 color:white;
-padding:10px 20px;
-border-radius: 5px;
+padding:1vw 2vw;
+border-radius: 0.5vw;
 border:none;
 cursor: pointer;
+height: 4vw;
+width: 6vw;
+font-size: 1.4vw;
 }
 .btn:hover{
 filter:brightness(1.5);
@@ -188,14 +156,14 @@ right:20%;
     justify-content: space-between; /* Распределяем пространство между таблицами */
 }
 table {
-    width: 400px;
+    width: 40vw;
     border-collapse: collapse; /* Убираем двойные границы */
-    margin-right: 60px; /* Отступ между таблицами */
-    margin-left: 60px;
+    margin-right: 6vw; /* Отступ между таблицами */
+    margin-left: 6vw;
 }
 td {
     
-    padding: 1px; 
+    padding: 0.1vw; 
 }
 
 
@@ -216,7 +184,7 @@ textarea::placeholder {
 }
 .brown-line{
     background-color: #614537;
-    height: 2px;
+    height: 0.2vw;
 }
 
 /*Почему именно мы */
@@ -227,7 +195,7 @@ textarea::placeholder {
 #list-why-we{
     display: flex;
     align-items: center;
-    gap: 20px; /* Отступы между элементами списка */
+    gap: 2vw; /* Отступы между элементами списка */
     list-style-type: none; /* Убираем маркеры списка */
     padding: 0; /* Убираем отступы у списка */
 }
@@ -236,11 +204,11 @@ textarea::placeholder {
     background-size: cover; /* Растягиваем изображение на всю кнопку */
     background-repeat: no-repeat; /* Не повторяем изображение */
     border: none; /* Убираем рамку */
-    height: 100px; /* Высота кнопки */
-    width: 100px; /* Ширина кнопки */
+    height: 8vw; /* Высота кнопки */
+    width: 8vw; /* Ширина кнопки */
     position: absolute; /* Абсолютное позиционирование */
-    bottom: 50px; /* Отступ от нижней границы */
-    right: 50px; /* Отступ от правой границы */
+    bottom: 20vw; /* Отступ от нижней границы */
+    right: 5vw; /* Отступ от правой границы */
     cursor: pointer; /* Курсор при наведении */
     transition: opacity 0.3s; /* Плавный переход */
     background-color: rgba(255, 255, 255, 0);
@@ -248,8 +216,10 @@ textarea::placeholder {
 
 
 .zagolovok{
-    font-size: 30px ;
+    font-size: 3vw ;
     font-family: "Traj";
+    line-height: 3.5vw;
+    margin-top: 2vw;
 }
 
 
