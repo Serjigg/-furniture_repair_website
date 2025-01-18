@@ -11,6 +11,7 @@
     justify-content: space-between; 
 }
 
+
 .table-first-parent{
     overflow: hidden; 
     margin-bottom: 4vw; 
@@ -19,6 +20,19 @@
     width: 75%; 
     border-radius: 0.6vw; 
     margin-top: 2vw; 
+}
+
+
+
+.parent-div-form{
+    margin-top: 25vw;
+    height: 40vw;
+    margin-bottom: 4vw;
+    border: 0.2vw solid #614537;
+    width: 62%;
+    background-color: #e1d9d1;
+    box-shadow: -0.08192vw -0.05736vw 2.1vw #614537;
+    overflow: hidden; 
 }
 
 .table-first{
@@ -191,6 +205,11 @@ textarea::placeholder {
 #table-why-we td {
     text-align: left;
     font-size: 1.2vw;
+    
+}
+
+#table-why-me{
+    margin-bottom: 100px;
 }
 #list-why-we{
     display: flex;
