@@ -1,8 +1,51 @@
+.menu{
+    height: 5.4vw; 
+    color: #e1d9d1;
+    display: flex; 
+    align-items: center;
+    padding: 0 2vw; 
+    font-size: 1vw; gap: 2vw;
+}
+.menu-first-div{
+    flex: 1; 
+    text-align: left; 
+    font-size: 1.4vw; 
+    font-family: 'Roboto-med';
+}
+.menu-first-div span:first-child{
+    white-space: nowrap;
+}
+.menu-first-div span:nth-child(3) {
+    margin-left: 8vw;
+}
+.menu-second-div a{
+    flex: 1; 
+    display: flex; 
+    justify-content: center; 
+    font-size: 1.4vw; 
+    font-family: 'Roboto'; 
+    padding: 0 1vw;
+}
+
+.menu-third-div{
+    flex: 3; 
+    text-align: right; 
+    font-size: 1.3vw;
+}
+.menu-third-div img{
+    vertical-align: middle; 
+    width: auto; 
+    height: 2.3vw; 
+    display: inline-block;
+}
+
+
+/* КОНЕЦ МЕНЮ */
 
 .first-block{
     background-image: url('img/img/fon.jpg'); 
    
-    height: 50%; 
+    height: 60vw; 
     background-repeat: no-repeat; 
     background-position: center; 
     background-size: cover; 
@@ -14,12 +57,13 @@
 
 .table-first-parent{
     overflow: hidden; 
-    margin-bottom: 4vw; 
+    margin-bottom: 4.3vw; 
     background-color: #e1d9d1; 
     height: 9vw; 
     width: 75%; 
     border-radius: 0.6vw; 
     margin-top: 2vw; 
+
 }
 
 
@@ -47,6 +91,7 @@
     height: 85%; 
     width: 98%;
 }
+
 
 .table-first td:nth-child(odd) {
     color: #614537;
