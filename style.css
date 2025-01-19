@@ -63,8 +63,14 @@
     flex-direction: column; 
     justify-content: space-between; 
 }
+.first-block-text{margin-left: 12vw; margin-top: 8.7vw;}
 
+.first-block-text button{
 
+    width: 24.2vw;
+    height: 6.3vw; 
+    font-size: 2vw;
+}
 .table-first-parent{
     overflow: hidden; 
     margin-bottom: 4.3vw; 
@@ -73,6 +79,7 @@
     width: 75%; 
     border-radius: 0.6vw; 
     margin-top: 2vw; 
+    text-align: center;
 
 }
 
@@ -101,7 +108,17 @@
     height: 85%; 
     width: 98%;
 }
+.table-first-parent td{
+    text-align: left; 
+    font-size: 1.3vw;
 
+}
+
+
+.table-first-parent td:nth-child(odd){
+    font-size: 3.8vw;
+    font-family: "Roboto";
+}
 
 .table-first td:nth-child(odd) {
     color: #614537;
