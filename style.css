@@ -53,7 +53,7 @@
 /* КОНЕЦ МЕНЮ */
 
 .first-block{
-    background-image: url('img/img/fon.jpg'); 
+    background-image: url('img/img/fon1.webp'); 
    
     height: 60vw; 
     background-repeat: no-repeat; 
@@ -71,16 +71,17 @@
     height: 6.3vw; 
     font-size: 2vw;
 }
-.table-first-parent{
+.table-first-parent {
     overflow: hidden; 
-    margin-bottom: 4.3vw; 
     background-color: #e1d9d1; 
     height: 9vw; 
     width: 75%; 
     border-radius: 0.6vw; 
-    margin-top: 2vw; 
     text-align: center;
-
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin: 2vw auto 4.3vw; 
 }
 
 
@@ -156,14 +157,14 @@ vertical-align: middle; /* Вертикальное центрирование �
 padding: 1vw; /* Отступы внутри ячеек */
 }
 
-.buttom{
+.button{
     color: #e1d9d1;
     width: 22vw; 
     height: 5vw; 
     background-color: #614537;
     border-radius: 1vw;
 }
-.buttom:hover{
+.button:hover{
     border: 0.2 solid transparent black; 
 
     color: #614537;
@@ -359,4 +360,24 @@ textarea::placeholder {
 }
 .font-traj{
     font-family: "Traj";
+}
+@media screen and (max-width: 480px) {
+    /* смартфоны */
+    .table-first-parent {
+        background-color: green; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* планшеты */
+    .table-first-parent {
+        background-color: red; 
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    /* нетбуки */
+    .table-first-parent {
+        background-color: lightblue; 
+    }
 }
