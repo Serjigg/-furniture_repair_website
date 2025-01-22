@@ -52,9 +52,11 @@
 
 /* КОНЕЦ МЕНЮ */
 
+
+
+
 .first-block{
-    background-image: url('img/img/fon.jpg'); 
-    ;
+    background-image: url('img/img/fon.webp'); 
     height: 60vw; 
     background-repeat: no-repeat; 
     background-position: center; 
@@ -63,39 +65,52 @@
     flex-direction: column; 
     justify-content: space-between; 
 }
-.first-block-text{margin-left: 12vw; margin-top: 8.7vw;}
+.first-block-text{
+    margin-left: 12vw; 
+    margin-top: 8.7vw;
+}
 
-.first-block-text button{
+.first-block h1{
+    margin-bottom: 1vw; 
+    margin-top: 1vw;  
+    font-size: 3vw; 
+    font-family: 'traj';
+}
+.first-block-text p:nth-of-type(1){
+    font-size: 1.8vw; 
+    margin-top: 1vw; 
+    font-family: 'Roboto-med';}
 
+.first-block-text p:nth-of-type(2){
+    font-family: 'Roboto'; 
+    font-size: 1.8vw;  
+    margin-top:0.1vw
+}
+.first-block-text a{
+    display: inline-block;          
     width: 24.2vw;
     height: 6.3vw; 
     font-size: 2vw;
+    text-align: center;             
+    line-height: 6.3vw;             
+    text-decoration: none;  
 }
-.table-first-parent{
+.first-block-text a:nth-of-type(1)
+{margin-top: 0.8vw;}
+.first-block-text a:nth-of-type(2)
+{margin-left: 1.8vw;}
+.table-first-parent {
     overflow: hidden; 
-    margin-bottom: 4.3vw; 
     background-color: #e1d9d1; 
     height: 9vw; 
     width: 75%; 
     border-radius: 0.6vw; 
-    margin-top: 2vw; 
     text-align: center;
-
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin: 2vw auto 4.3vw
 }
-
-
-
-.parent-div-form{
-    margin-top: 25vw;
-    height: 40vw;
-    margin-bottom: 4vw;
-    border: 0.2vw solid #614537;
-    width: 62%;
-    background-color: #e1d9d1;
-    box-shadow: -0.08192vw -0.05736vw 2.1vw #614537;
-    overflow: hidden; 
-}
-
 .table-first{
     border: 0.3vw dashed #614537; 
     border-color: #614537; 
@@ -109,11 +124,9 @@
     width: 98%;
 }
 .table-first-parent td{
-    text-align: left; 
+    text-align: center; 
     font-size: 1.3vw;
-
 }
-
 
 .table-first-parent td:nth-child(odd){
     font-size: 3.8vw;
@@ -124,16 +137,83 @@
     color: #614537;
 }
 
+
+/* конец первого блока */
+
 .second-block{
     background-color: #614537;
-    height: 50vw ;color: #e4e0df; line-height: 2vw;
+    height: 50vw ;
+    color: #e4e0df; 
+    line-height: 2vw;
+    text-align: center;
 }
 
+.second-block table{
+    margin: auto;
+}
+.second-block table img{
+    width: 33vw; 
+    height: 23vw; 
+}
+.second-block table ul{
+    font-size: 1.3vw;
+}
+
+.second-block ul{
+    padding-left: 0;
+    padding-left: 0;  
+    margin-left: 0;   
+    text-align: left; 
+}
+
+
+/* конец второго блока */
+
+
+.our_works{
+    height: 89vw; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;  
+    margin-bottom: 100px;
+}
+
+
+.brown_line{
+    
+}
+
+.background_white-gray{
+    background-color: #e4e0df;
+}
 .background_brown{
     background-color: #614537;
 }
-.background_white-gray{
-    background-color: #e4e0df;
+
+/*Почему именно мы */
+#table-why-we td {
+    text-align: left;
+    font-size: 1.2vw;
+    
+}
+#list-why-we{
+    display: flex;
+    align-items: center;
+    gap: 2vw; /* Отступы между элементами списка */
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы у списка */
+}
+
+#list-why-we li:first-child div {
+    /* Стили для первого элемента */
+    background-color: #ffcc00; /* Пример изменения фона */
+}
+
+#list-why-we h2{
+    font-size: 3vw;
+}
+#table-why-me{
+    margin-bottom: 100px;
 }
 
 li{
@@ -143,12 +223,7 @@ li{
 
     
 }
-ul{
-    padding-left: 0;
-    padding-left: 0;  
-    margin-left: 0;   
-    text-align: left; 
-}
+
 
 th, td {
 text-align: center; /* Горизонтальное центрирование текста */
@@ -156,14 +231,14 @@ vertical-align: middle; /* Вертикальное центрирование �
 padding: 1vw; /* Отступы внутри ячеек */
 }
 
-.buttom{
+.button{
     color: #e1d9d1;
     width: 22vw; 
     height: 5vw; 
     background-color: #614537;
     border-radius: 1vw;
 }
-.buttom:hover{
+.button:hover{
     border: 0.2 solid transparent black; 
 
     color: #614537;
@@ -278,23 +353,11 @@ textarea::placeholder {
     height: 0.2vw;
 }
 
-/*Почему именно мы */
-#table-why-we td {
-    text-align: left;
-    font-size: 1.2vw;
-    
-}
 
-#table-why-me{
-    margin-bottom: 100px;
-}
-#list-why-we{
-    display: flex;
-    align-items: center;
-    gap: 2vw; /* Отступы между элементами списка */
-    list-style-type: none; /* Убираем маркеры списка */
-    padding: 0; /* Убираем отступы у списка */
-}
+
+
+
+
 .btn-get-consult{
     background-image: url('img/icons/стрелка_верх.png'); /* Путь к изображению */
     background-size: cover; /* Растягиваем изображение на всю кнопку */
@@ -319,7 +382,16 @@ textarea::placeholder {
 }
 
 
-
+.parent-div-form{
+    margin-top: 25vw;
+    height: 40vw;
+    margin-bottom: 4vw;
+    border: 0.2vw solid #614537;
+    width: 62%;
+    background-color: #e1d9d1;
+    box-shadow: -0.08192vw -0.05736vw 2.1vw #614537;
+    overflow: hidden; 
+}
 
 
 
@@ -358,5 +430,52 @@ textarea::placeholder {
     font-family: "ROBOTO";
 }
 .font-traj{
+ 
     font-family: "Traj";
 }
+
+@media screen and (min-width: 1441px) {
+    /* десктоп */
+    .table-first-parent {
+        background-color: orange; 
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    /* десктоп */
+    .table-first-parent {
+        background-color: lightblue; 
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    /* планшеты */
+    .first-block-text p:nth-of-type(1){
+        margin-top: 1px;
+        margin-bottom: 1px;
+        padding: 1px;
+        color:aqua
+    }
+    .first-block-text p:nth-of-type(2){
+        margin-bottom: 1px;
+        margin-top: 1px;
+        color:aqua
+    }
+    .table-first-parent {
+        background-color: red; 
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* смартфоны */
+    .table-first-parent {
+        background-color: green; 
+
+    }
+
+    .parent-div-form table img {
+        background-color: red;
+        margin-bottom: 1vw;
+    }
+}
+
