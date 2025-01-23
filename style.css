@@ -191,11 +191,32 @@
 }
 
 /*Почему именно мы */
+#table-why-we{
+    width: 90%;
+}
+
 #table-why-we td {
     text-align: left;
     font-size: 1.2vw;
+}
+#table-why-we td img {
+    width: 10vw;    
+    height:  9vw;
     
 }
+#table-why-we tr:nth-of-type(2){
+    font-family: 'Roboto-med';
+}
+#table-why-we tr:nth-of-type(3) div{
+    background-color: #614537;  
+    height: 0.2vw; 
+    width: 7vw;
+
+}
+#table-why-we tr:nth-of-type(4){
+    font-family: 'Roboto';
+}
+
 #list-why-we{
     display: flex;
     align-items: center;
@@ -204,14 +225,18 @@
     padding: 0; /* Убираем отступы у списка */
 }
 
-#list-why-we li:first-child div {
+#list-why-we li:first-child  div{
     /* Стили для первого элемента */
-    background-color: #ffcc00; /* Пример изменения фона */
-}
+    background-color: #614537;  height: 0.2vw; width: 16vw;}
 
 #list-why-we h2{
     font-size: 3vw;
 }
+
+#list-why-we li:last-child  div{
+    /* Стили для первого элемента */
+    background-color: #614537;  height: 0.2vw; width: 16vw;}
+
 #table-why-me{
     margin-bottom: 100px;
 }
@@ -225,10 +250,278 @@ li{
 }
 
 
+
+/* конец почему мы */
+
+
+.material_using{
+    margin-bottom: 28vw;
+}
+
+.slide{
+    width: 50%; font-size: 3vw;
+}
+.slide ul{
+    display: flex;  
+    justify-content: center;  
+    font-family: 'Roboto'; 
+    font-size: 3vw;
+}
+.slide ul li{
+    margin: 0 4vw;
+}
+
+.carousel-title{
+    font-family: 'Roboto-med';
+}
+#carousel-description{
+    font-size: 2.2vw; 
+    font-family: 'Roboto';
+}
+
+.carousel-caption{
+    color: black; 
+    position: absolute; 
+    bottom: -5vw; 
+    left: 0; 
+    right: 0; 
+    top: 43vw;
+}
+.carousel-control-prev{
+    left: -7vw;
+}
+.carousel-control-next{
+    right: -7vw;
+    
+}
+
+/* our materials */
+.price{
+    height: 35vw; 
+    color: white; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.price p{
+    font-size: 4.6vw; 
+    margin-bottom: 2vw; 
+    text-align: center;
+    font-family: 'Traj';
+    margin-top: 1vw;
+}
+
+.container2 {
+    display: flex; 
+    justify-content: space-between; 
+    margin-bottom: 5.5vw; 
+    display: flex; 
+    justify-content: space-around; 
+    width: 100%;
+}
+.container2 table{
+    border-collapse: collapse; font-size: 1.3vw;
+}
+
+.container2 table th{
+    text-align: center;
+}
+.container2 table tr{
+    text-align: center;
+}
+.container2 table tr td:nth-of-type(1){
+    border-right: 0.1vw solid white; 
+    border-bottom: 0.1vw solid white;
+}
+.container2 {
+    width: 100%; 
+    border-collapse: collapse; 
+    color: white; 
+    font-size: 1.2vw; 
+}
+
+.container2 th {
+    padding: 1vw;
+    text-align: center;
+}
+
+.container2 td {
+    padding: 0.8vw;
+    text-align: left;
+    border-right: 0.1vw solid white;
+    border-bottom: 0.1vw solid white;
+}
+
+.container2 tr:last-child td {
+    border-bottom: none;
+}
+
+.container2 td:last-child {
+    text-align: right;
+}
+
+
+
+/* конец прайса */
+
+.reviews{
+    background-color: #e4e0df; 
+    height: 120vw ; 
+    position: relative;
+}
+.reviews h1{
+    font-size: 4.6vw;
+    font-family: 'traj';
+    
+    
+}
+.image-container{
+    position:relative;
+    width:23vw;
+    height:16vw;
+    transform-style: preserve-3d;
+    transform: perspective(100vw) rotateY(0deg);
+    transition: transform 0.7s;
+    margin-top: 15vw;
+    
+    }
+.image-container span{
+position:absolute;
+top:0;
+left:0;
+width:23vw;
+transform: rotateY(calc(var(--i) * 45deg)) translateZ(33vw);
+}
+.image-container span img{
+position:absolute;
+left:0;
+top:0;
+width:100%;
+border-radius: 0.5vw;
+border: 0.2vw solid #614537;
+}
+
+.btn-container{
+    position:relative;
+    width:80%;
+    }
+
+.btn{
+position: absolute;
+bottom:-8vw;
+background-color: #614537;
+color:white;
+padding:1vw 2vw;
+border-radius: 0.5vw;
+border:none;
+cursor: pointer;
+height: 4vw;
+width: 6vw;
+font-size: 1.4vw;
+}
+.btn:hover{
+filter:brightness(1.5);
+}
+.parent-div-form{
+    margin-top: 25vw;
+    height: 40vw;
+    margin-bottom: 4vw;
+    border: 0.2vw solid #614537;
+    width: 62%;
+    background-color: #e1d9d1;
+    box-shadow: -0.08192vw -0.05736vw 2.1vw #614537;
+    overflow: hidden; 
+}
+.parent-div-form p{
+    font-size: 2.4vw;
+    font-family: 'traj';
+}
+.parent-div-form span{
+    margin-bottom: 2vw;
+    font-size: 1.5vw;
+}
+.parent-div-form table{
+    width: 80%; 
+    height: 2vw; 
+    font-size: 1.5vw; 
+}
+
+.parent-div-form table td{
+    width: 50%;
+}
+.parent-div-form table td form{
+    text-align: left; 
+}
+.form-group{
+    margin: 0.1vw; padding: 0.1vw; 
+}
+
+.form-group label{
+    margin: 0.1vw; padding: 0.1vw;
+}
+.form-group input{
+    font-size: 1.5vw; 
+    background-color: #e1d9d1; 
+    border: none; 
+    margin: 0.1vw; 
+    padding: 0.1vw;}
+.form-group textarea{
+    margin: 0.1vw; 
+    padding: 0.1vw; 
+    border: 0.2vw solid #614537; 
+    background-color: #e4e0df; 
+    font-size: 1.3vw;
+}
+.form-group button{
+    width: 100%; 
+    height: 3.4vw; 
+    border-radius: 0.5vw;
+}
+
+/* конец формы */
+
+
+
+.footer{
+    height: 12vw; 
+    color: white; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.footer div:nth-of-type(1){
+    text-align: center; 
+    padding: 1vw 0;
+    font-size: 1.2vw;
+}
+.footer div:nth-of-type(2){
+    margin-bottom: 1vw; 
+    margin-top: 1.2vw; 
+    font-size: 1.2vw;
+    
+}
+.footer-text{
+    margin-bottom: 1vw;
+    font-size: 1.2vw;
+}
+.footer-text img{
+    vertical-align: middle; 
+    width: auto;
+    height: 2.3vw; 
+    display: inline-block;
+}
+
+
+/* footer */
+
+
 th, td {
-text-align: center; /* Горизонтальное центрирование текста */
-vertical-align: middle; /* Вертикальное центрирование текста */
-padding: 1vw; /* Отступы внутри ячеек */
+text-align: center; 
+vertical-align: middle; 
+padding: 1vw; 
 }
 
 .button{
@@ -257,35 +550,8 @@ body{
     font-size: 2vw;
 }
 
-.image-container{
-    position:relative;
-    width:23vw;
-    height:16vw;
-    transform-style: preserve-3d;
-    transform: perspective(100vw) rotateY(0deg);
-    transition: transform 0.7s;
-    
-    }
-.image-container span{
-position:absolute;
-top:0;
-left:0;
-width:23vw;
-transform: rotateY(calc(var(--i) * 45deg)) translateZ(33vw);
-}
-.image-container span img{
-position:absolute;
-left:0;
-top:0;
-width:100%;
-border-radius: 0.5vw;
-border: 0.2vw solid #614537;
-}
 
-.btn-container{
-position:relative;
-width:80%;
-}
+
 .btn-brown{
     background-color: #614537;
     color:white;
@@ -294,22 +560,7 @@ width:80%;
     filter:brightness(1.5);
 
 }
-.btn{
-position: absolute;
-bottom:-8vw;
-background-color: #614537;
-color:white;
-padding:1vw 2vw;
-border-radius: 0.5vw;
-border:none;
-cursor: pointer;
-height: 4vw;
-width: 6vw;
-font-size: 1.4vw;
-}
-.btn:hover{
-filter:brightness(1.5);
-}
+
 #prev{
 left:20%;
 }
@@ -317,10 +568,7 @@ left:20%;
 right:20%;
 }
 
-.container2 {
-    display: flex; /* Используем flexbox */
-    justify-content: space-between; /* Распределяем пространство между таблицами */
-}
+
 table {
     width: 40vw;
     border-collapse: collapse; /* Убираем двойные границы */
@@ -382,16 +630,7 @@ textarea::placeholder {
 }
 
 
-.parent-div-form{
-    margin-top: 25vw;
-    height: 40vw;
-    margin-bottom: 4vw;
-    border: 0.2vw solid #614537;
-    width: 62%;
-    background-color: #e1d9d1;
-    box-shadow: -0.08192vw -0.05736vw 2.1vw #614537;
-    overflow: hidden; 
-}
+
 
 
 
