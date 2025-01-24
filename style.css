@@ -142,29 +142,46 @@
 
 .second-block{
     background-color: #614537;
-    height: 50vw ;
+    height: 44vw ;
     color: #e4e0df; 
     line-height: 2vw;
     text-align: center;
 }
+.second-block h1{
+    margin: 0vw 0vw 0.62vw;
+
+}
+
 
 .second-block table{
     margin: auto;
+    border-spacing: 6vw 0vw; 
+    border-collapse: separate;
+}
+.second-block table td{
+    padding: 1vw;
+    white-space: nowrap;
+    
 }
 .second-block table img{
-    width: 33vw; 
-    height: 23vw; 
+    width: 36vw; 
+    height: 26vw; 
 }
 .second-block table ul{
-    font-size: 1.3vw;
+    font-size: 1.9vw;
+    
 }
 
 .second-block ul{
-    padding-left: 0;
-    padding-left: 0;  
-    margin-left: 0;   
+    padding-left: 0vw;
+    margin-left: 0vw;   
     text-align: left; 
 }
+.second-block ul li{
+margin: 2.7vw 0vw;
+padding: 0vw;
+}
+
 
 
 /* конец второго блока */
@@ -177,7 +194,10 @@
     align-items: center;  
     margin-bottom: 100px;
 }
-
+.our_works p{
+    font-size: 2.4vw;
+    font-family: 'roboto';
+}
 
 .brown_line{
     
@@ -273,11 +293,13 @@ li{
 
 .carousel-title{
     font-family: 'Roboto-med';
+    font-size: 2vw;
 }
 #carousel-description{
     font-size: 2.2vw; 
     font-family: 'Roboto';
 }
+
 
 .carousel-caption{
     color: black; 
@@ -678,6 +700,26 @@ textarea::placeholder {
     .table-first-parent {
         background-color: orange; 
     }
+    .image-container {
+    position: relative;
+    width: 14.72vw; /* Уменьшено на 20% от 18.4vw */
+    height: 10.24vw; /* Уменьшено на 20% от 12.8vw */
+    transform-style: preserve-3d;
+    transform: perspective(64vw) rotateY(0deg); /* Уменьшена перспектива */
+    transition: transform 0.7s;
+    margin-top: 9.6vw; /* Уменьшен отступ на 20% */
+}
+
+.image-container span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 14.72vw; /* Уменьшено на 20% от 18.4vw */
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(22.4vw); /* Уменьшено значение translateZ на 20% */
+}
+
+    
+    
 }
 
 @media screen and (max-width: 1440px) {
@@ -685,6 +727,14 @@ textarea::placeholder {
     .table-first-parent {
         background-color: lightblue; 
     }
+    .parent-div-form table img {
+        margin-bottom: 1vw;
+        width: 23vw; position: absolute; bottom: 19vw; left :22vw;
+    }
+
+
+
+   
 }
 
 @media screen and (max-width: 1024px) {
@@ -703,6 +753,9 @@ textarea::placeholder {
     .table-first-parent {
         background-color: red; 
     }
+    .Reviews h1{
+        margin-top: 20vw;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -713,8 +766,9 @@ textarea::placeholder {
     }
 
     .parent-div-form table img {
-        background-color: red;
         margin-bottom: 1vw;
     }
+    .carousel ul {
+        padding-left: 0.1vw;
+    }
 }
-
